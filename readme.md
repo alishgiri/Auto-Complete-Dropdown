@@ -6,19 +6,17 @@ import it,
 
 and use it,
 
-> <AutoCompleteDropdown
-> {...TextInput props}
->
-> compareKey="name"
-> onSelected={(name) => console.warn(name)}
-> data={[{ name: "Karen" }, { name: "Harry" }]}
->
-> textInputStyle={{}}
-> wrapperViewStyle={{}}
-> listItemTextStyle={{}}
-> listItemViewStyle={{}}
-> />
+<AutoCompleteDropdown
+{...TextInput props}
 
-![Search bar](/images/one.png)
+compareKey="name"
+onSelected={(name) => console.warn(name)}
+data={[{ name: "Karen" }, { name: "Harry" }]}
 
-![Search bar with dropdown](/images/two.png)
+textInputStyle={{}}
+wrapperViewStyle={{}}
+listItemTextStyle={{}}
+listItemViewStyle={{}}
+/>
+
+![Search bar](/images/one.png) ![Search bar with dropdown](/images/two.png)
