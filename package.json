@@ -1,6 +1,6 @@
 {
   "name": "auto-complete-dropdown",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "Simple auto complete dropdown for your form.",
   "main": "index.js",
   "scripts": {
@@ -12,9 +12,6 @@
   },
   "author": "Alish Giri",
   "license": "MIT",
-  "publishConfig": {
-    "registry": "https://npm.pkg.github.com/"
-  },
   "devDependencies": {
     "metro-react-native-babel-preset": "^0.59.0"
   }
