@@ -72,10 +72,12 @@ class AutoCompleteDropdown extends React.Component {
     const {
       data,
       value,
+      placeholder,
       textInputStyle,
       wrapperViewStyle,
       listItemViewStyle,
       listItemTextStyle,
+      ...rest
     } = this.props;
     const { isVisible, suggestions, keyword } = this.state;
     return !data ? (
@@ -83,12 +85,13 @@ class AutoCompleteDropdown extends React.Component {
     ) : (
       <View style={[styles.text_field_wrapper_view, wrapperViewStyle]}>
         <TextInput
-          placeholder="Search…"
           selectTextOnFocus={true}
-          onChangeText={this.onFilter}
           clearButtonMode="while-editing"
           onKeyPress={this.keyPressAction}
+          {...rest}
+          onChangeText={this.onFilter}
           value={keyword ? keyword : value}
+          placeholder={placeholder ?? "Search…"}
           style={[styles.text_field(isVisible), textInputStyle]}
         />
         {isVisible && (
