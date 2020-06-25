@@ -1,5 +1,13 @@
 # Example Use Case
 
+install it with yarn or npm
+
+> yarn add auto-complete-dropdown
+
+or
+
+> npm i auto-complete-dropdown
+
 import it,
 
 > import { AutoCompleteDropdown } from "auto-complete-dropdown";
