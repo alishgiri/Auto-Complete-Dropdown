@@ -20,7 +20,8 @@ and use it,
        compareKey="name"
        onSelected={(name) => console.warn(name)}
        data={[{ name: "Karen" }, { name: "Harry" }]}
-
+        
+       placeholder= ""
        textInputStyle={{}}
        wrapperViewStyle={{}}
        listItemTextStyle={{}}
