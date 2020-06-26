@@ -18,9 +18,9 @@ and use it,
        {...TextInput props}
 
        compareKey="name"
-       onSelected={(name) => console.warn(name)}
        data={[{ name: "Karen" }, { name: "Harry" }]}
-        
+       onSelected={(selectedItem) => console.warn(selectedItem.name)}
+
        placeholder= ""
        textInputStyle={{}}
        wrapperViewStyle={{}}
